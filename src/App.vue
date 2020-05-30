@@ -1,18 +1,14 @@
 <template>
   <div id="app">
-    <pagination />
+		<router-view :key="$route.fullPath"></router-view>
   </div>
 </template>
 
 <script>
-import Pagination from './components/Pagination.vue'
 
 export default {
-  name: 'App',
-  components: {
-    Pagination
-  }
-}
+  name: "App",
+};
 </script>
 
 <style>
@@ -24,4 +20,6 @@ export default {
   color: #2c3e50;
   margin-top: 60px;
 }
+
+
 </style>
